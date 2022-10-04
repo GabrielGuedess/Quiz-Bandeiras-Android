@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Quiz Bandeira Android</string>
+    <string name="app_name">Quiz Bandeiras</string>
+    <string name="title_quiz">Que país é esse?</string>
 </resources>

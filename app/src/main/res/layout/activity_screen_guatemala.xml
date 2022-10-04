@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScreenGuatemala">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/title_quiz"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="100dp"
+            app:srcCompat="@drawable/guatemala" />
+
+        <RadioGroup
+            android:id="@+id/rbgContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="100dp">
+
+            <RadioButton
+                android:id="@+id/rbChina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="OnRadioButtonClicked"
+                android:text="USA" />
+
+            <RadioButton
+                android:id="@+id/rbCoreia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="OnRadioButtonClicked"
+                android:text="Italia" />
+
+            <RadioButton
+                android:id="@+id/rbGuatemala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="OnRadioButtonClicked"
+                android:text="Guatemala" />
+
+            <RadioButton
+                android:id="@+id/rbCuba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="OnRadioButtonClicked"
+                android:text="Canadá" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnResponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:enabled="false"
+            android:onClick="Confirm"
+            android:text="Responder" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
